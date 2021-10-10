@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    font-family:Arial, Helvetica, sans-serif;
     margin:0;
 }
 
@@ -7,7 +8,7 @@ body {
     background-color:black;
     width: 1200px;
     height: 100%;
-    border: solid 1px crimson;
+    border: solid 1px #ff8a00;
     margin-left: auto;
     margin-right: auto;
 }
@@ -15,7 +16,9 @@ body {
 .home {
     display: flex;
     flex-direction: row;
-    background-color: red;
+    position:fixed;
+    width:1200px;
+    background-color: black;
     align-items: center;
 }
 
@@ -33,15 +36,19 @@ body {
 
 .nav li {
     font-family:Arial, Helvetica, sans-serif;
-   
     text-transform: uppercase;
     list-style-type: none;
-    padding: 10px 25px 10px 25px;
+    padding: 5px 10px 5px 10px;
 }
 
 .nav a { 
     color:white;
+    font-size: 14px;
     text-decoration: none;
+}
+
+.nav a:hover {
+    color: #ff8a00;
 }
 
 .logo {
@@ -54,6 +61,8 @@ body {
 .about {
     display: flex;
     flex-direction: row;
+    background-image: radial-gradient(circle, rgb(46, 46, 46) 2%, black 98%);
+    margin-top: 70px;
 }
 
 .about .intro {
@@ -61,13 +70,15 @@ body {
      font-family: Arial, Helvetica, sans-serif;
      color: white;
      padding: 80px;
-     
-
 }
 
 .about .intro h2 {
     font-size: 40px;
     padding-bottom: 30px;
+}
+
+.about .intro span {
+    color: #ff8a00;
 }
 
 .about .intro h3 {
@@ -81,13 +92,62 @@ body {
 }
 
 .about .btn {
-    background-color: crimson;
+    background-color: #ff8a00;
     color: white;
     padding: 10px;
 }
 
 .about .photo {
-    filter: sepia(75%) brightness(70%);
+    width: 400px;
+    filter:  blue(70%);
     border-radius: 50%;
     padding: 30px;
+}
+
+/*-------KNOWLEDGE---------*/
+
+.skills {
+    margin-right:auto;
+    margin-left: auto;
+}
+.skills h2 {
+    color: #ff8a00;
+    font-family: Oswald, sans-serif;
+    font-size: 40px;
+    padding: 0 0 30px 70px;
+}
+
+.skills .icons {
+    margin-right:auto;
+    margin-left: auto;
+    width: 80%;
+}
+
+.skills .icons .row {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    width: 100%;
+}
+
+.skills .icons .row .card {
+    width: 100%;
+    padding: 10px;
+}
+
+.skills .icons .row .card:hover {
+    background-color: rgb(24, 24, 24);
+}
+
+.skills .icons .row .card h3 {
+    color: #ff8a00;
+}
+
+.skills .icons .row .card p {
+    color: rgb(189, 189, 189);
+}
+
+.skills .icons .row .card i {
+    color: #ff8a00;
+    padding: 0 8px 0 8px;
 }
