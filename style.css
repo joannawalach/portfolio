@@ -27,6 +27,7 @@ body {
     width:1200px;
     background-color: black;
     align-items: center;
+    z-index: 999;
 }
 
 .home h1 {
@@ -147,6 +148,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 30px;
+ 
 }
 
 /*------KNOWLEDGE-------*/
