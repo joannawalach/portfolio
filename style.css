@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 
 body {
     background-color: black;
@@ -26,6 +27,11 @@ body {
     width:1200px;
     background-color: black;
     align-items: center;
+}
+
+.home h1 {
+    font-family: 'Oswald', sans-serif;
+    color: #ff8a00;
 }
 
 .menu {
@@ -120,7 +126,7 @@ body {
 }
 
 .about .socialicons i{
-   
+    color:#ff8a00;
     font-size: 18px;
     margin-top: 30px;
     padding: 0 10px 0 10px;
@@ -469,9 +475,22 @@ border:0;
 padding: 10px 25px 10px 25px;
 }
 
+.contact .socialicons i {
+    color:#ff8a00;
+    font-size: 18px;
+    margin-top: 30px;
+    padding: 0 10px 0 10px;
+}
+
+.contact .socialicons i:hover {
+    color: rgb(189, 189, 189); ;
+    font-size: 18px;
+    margin-top: 30px;
+}
 /*-------FOOTER-------*/
 
 .footer {
     color:#ff8a00;
     text-align:center;
 }
+
