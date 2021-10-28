@@ -10,6 +10,9 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    margin-top:0;
     padding: 0 5rem 0 5rem;
 }
 
@@ -18,11 +21,13 @@ body {
     flex-direction: row;
     width: 100%;
     position: fixed;
+    top:0;
     background-color: black;
     align-items: center;
 }
 
 .home h1 {
+    font-family: 'Oswald';
     font-size: 2rem;
 }
 
@@ -45,6 +50,103 @@ body {
     text-decoration: none;
     padding: 0 0.2rem 0 0.2rem;
 }
+
+.about {
+    display: flex;
+    flex-direction:row;
+    column-gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(./img/tlo.jpg);
+    margin-top: 120px;
+    padding: 20px;
+}
+
+.about h2 {
+    font-family: 'Oswald';
+    font-size: 40px;
+}
+
+.about p {
+    color: white;
+}
+
+.about .intro {
+ width: 50%;
+ padding: 20px;
+}
+
+.about .photo {
+    width: 50%;
+    
+}
+
+.about .photo {
+    width: 400px;
+    border-radius: 50%;  
+    filter: grayscale();
+}
+
+.about .contacticons {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ width: 100%;
+}
+
+.about .contactbtn {
+    background-color:orange;
+    padding: 5px 10px 5px 10px;
+}
+
+.about .contactbtn a {
+      color: black;
+      text-decoration: none;
+}
+
+.about .socialicons a {
+    color: orange;
+    padding: 0 7px 0 7px;
+}
+
+.skills {
+    display: flex;
+    flex-direction:column;
+    column-gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.skills h2 {
+    font-family: 'Oswald';
+    font-size: 40px;
+}
+
+.skills .icons {
+    width: 100%;
+    padding: 10px;
+}
+
+.skills .icons .row {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.skills .icons .card {
+    width: 33%;
+    padding: 20px;
+}
+
+.skills .icons .card h3 i{
+    padding-right: 20px;
+}
+
+.skills .icons .card p {
+color: white;
+}
+
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 1200px) {
@@ -81,8 +183,40 @@ body {
  }
 
  .home ul {
-width: 80%;
+width: 70%;
  }
+
+ .about {
+     display: flex;
+     flex-direction: row-reverse;
+ }
+
+ .about .intro {
+width: 100%;
+ }
+
+ .about .photo {
+     width: 200px;
+ }
+ 
+ .about .contacticons .contactbtn {
+     margin: 5px 40px 5px 0;
+}
+
+.skills {
+  
+}
+
+.skills .icons .row {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills .icons .row .card {
+    width: 40%;
+    padding: 20px;
+    text-align: center;
+}
 }
    
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -91,12 +225,35 @@ width: 80%;
         font-size: 1.4rem;
     }
 
+    .skills {
+        display: flex;
+        flex-direction:column;
+        column-gap: 30px;
+        justify-content: space-around;
+        align-items: center;
+        padding:10px;
+    }
+    
+    .skills .icons .row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .skills .icons .row .card {
+        width: 35%;
+        padding: 10px;
+        text-align: center;
+    }
+
 
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    
 
+    .container {
+        padding: 0;
+
+    }
     .home h1 {
         font-size: 1.2rem;
     }
@@ -106,4 +263,32 @@ width: 80%;
         flex-direction: column;
        line-height: 2.5rem;
        }
+
+       .about {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 300px;
+    }
+   
+    .about .intro {
+   width: 100%;
+    }
+   
+    .about .photo {
+        display: none;
+    }
+    
+    .about .contacticons .contactbtn {
+        margin: 5px 40px 5px 0;
+   }
+
+   .skills .icons .row {
+    display: flex;
+    flex-direction: row;
+}
+
+.skills .icons .row .card {
+    width: 50%;
+    padding: 0;
+}
 }
